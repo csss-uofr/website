@@ -2,15 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { DiCodepen } from "react-icons/di";
 import { IoSearch } from "react-icons/io5";
+import { useNavigate } from 'react-router-dom';
 
 
 const Navbar = () => {
+    const navigate = useNavigate();
     return (
         <>
         <div className="w-full h-20 flex flex-row items-center md:justify-between md:border-none border-gray-300 border-b justify-center px-10">
 <div className=
 "w-max flex flex-row items-center">
-    <div className="text-3xl font-bold tracking-wide flex flex-row items-center">
+    <div className="text-3xl font-bold tracking-wide flex flex-row items-center hover:cursor-pointer"
+    onClick={() => navigate("/")}>
         <span><DiCodepen className="text-5xl" /></span>
         <h1>UR CSSS</h1>
         </div>

@@ -11,8 +11,6 @@ const Layout = () => {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <div className="">
-        <HeroSection />
-        <EventCard />
         <main className="w-full">
           <Outlet />
         </main>
