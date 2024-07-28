@@ -7,6 +7,7 @@ import Contact from './pages/Contact';
 import Elections from './pages/Elections';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Four04 from './pages/Four04';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
           <Route path="/about" element={<About/>} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/elections" element={<Elections/>} />
-          <Route path="*" element={<h1>Not Found</h1>} />
+          <Route path="*" element={<Four04 />} />
         </Routes>
         <Footer />
       </div>

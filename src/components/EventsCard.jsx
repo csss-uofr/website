@@ -112,7 +112,7 @@ const EventCard = (/* { post }*/) => {
             ))}
           </div>
         </div>
-        <div className="w-full justify-center flex flex-row py-12">
+        <div className="w-full justify-center flex flex-row py-12 text-center">
             <p>Have a suggested event or initiative in mind? Send it our way <Link to="mailto:devp61136@gmail.com" className="text-blue-400 hover:underline">here.</Link></p>
         </div>
       </div>
