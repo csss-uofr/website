@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center py-12 border-t bg-black text-gray-500 border-gray-400 fira">
         <div className="flex-row flex px-6 py-4">
           {/* <DiCodepen className="text-5xl lg:text-7xl" /> */}
-          <img src={Logo} alt="uofr-csss-logo" className="mr-2 rounded-md h-16 lg:w-full w-max" />
+          <img src={Logo} alt="uofr-csss-logo" className="mr-2 rounded-md h-16 lg:w-full w-16" />
         </div>
         <div className="flex-row flex justify-left px-8">
           <div className="flex-col flex">
