@@ -5,11 +5,18 @@ import ServiceSection from "../components/ServiceSection";
 
 const Home = () => {
   const [data, setData] = useState([]);
+  const [serviceData, setServiceData] = useState([]);
   const [loading, setLoading] = useState(true); // Added loading state
   const [error, setError] = useState(null); // Added error state
 
   useEffect(() => {
-    fetch("/data.json")
+    fetchEventData();
+    fetchServiceData();
+    setLoading(false);
+  }, []);
+
+  async function fetchEventData() {
+    await fetch("/data/Events/EventDetails.json") // Leading slash for absolute path
       .then((response) => {
         if (!response.ok) {
           throw new Error(`Network response was not ok: ${response.statusText}`);
@@ -18,14 +25,30 @@ const Home = () => {
       })
       .then((jsonData) => {
         setData(jsonData);
-        setLoading(false); // Set loading to false after data is fetched
       })
       .catch((error) => {
         console.error("Error fetching the JSON file:", error);
-        setError(error); // Set error state
-        setLoading(false); // Set loading to false in case of error
+        setError(error);
+        setLoading(false);
       });
-  }, []);
+  }
+  async function fetchServiceData() {
+    await fetch("/data/Services/ServiceDetails.json") // Leading slash for absolute path
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`Network response was not ok: ${response.statusText}`);
+        }
+        return response.json();
+      })
+      .then((jsonData) => {
+        setServiceData(jsonData);
+      })
+      .catch((error) => {
+        console.error("Error fetching the JSON file:", error);
+        setError(error);
+        setLoading(false);
+      });
+  }
 
   if (loading) {
     return <div>Loading...</div>; // Display loading message
@@ -44,7 +67,7 @@ const Home = () => {
         </h2>
       </div>
       <EventCard data={data} />
-      <ServiceSection />
+      <ServiceSection services={serviceData} />
     </>
   );
 };

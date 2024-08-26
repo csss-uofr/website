@@ -1,43 +1,35 @@
 [
     {
-      "id": 1,
+      "id": "1",
       "title": "React Workshop",
       "description": "An interactive workshop on building modern web applications using React.js.",
       "date": "2024-09-15",
       "location": "Online",
-      "thumbnailUrl": "https://example.com/images/react-workshop-thumbnail.jpg"
+      "thumbnailUrl": "https://www.eric-forum.eu/wp-content/uploads/2019/04/no-thumbnail.jpg"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "JavaScript Conference 2024",
       "description": "Join industry experts for a day of talks, panels, and networking focused on JavaScript.",
       "date": "2024-10-01",
       "location": "San Francisco, CA",
-      "thumbnailUrl": "https://example.com/images/js-conference-thumbnail.jpg"
+      "thumbnailUrl": "https://www.eric-forum.eu/wp-content/uploads/2019/04/no-thumbnail.jpg"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Full-Stack Developer Meetup",
       "description": "A meetup for full-stack developers to share knowledge, discuss trends, and network.",
       "date": "2024-08-25",
       "location": "New York, NY",
-      "thumbnailUrl": "https://example.com/images/fullstack-meetup-thumbnail.jpg"
+      "thumbnailUrl": "https://www.eric-forum.eu/wp-content/uploads/2019/04/no-thumbnail.jpg"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Tech Startup Pitch Night",
       "description": "Watch startups pitch their ideas to a panel of investors and industry leaders.",
       "date": "2024-09-30",
       "location": "Austin, TX",
-      "thumbnailUrl": "https://example.com/images/pitch-night-thumbnail.jpg"
-    },
-    {
-      "id": 5,
-      "title": "AI & Machine Learning Summit",
-      "description": "Explore the latest advancements in AI and machine learning with top researchers and professionals.",
-      "date": "2024-11-05",
-      "location": "Boston, MA",
-      "thumbnailUrl": "https://example.com/images/ai-summit-thumbnail.jpg"
+      "thumbnailUrl": "https://www.eric-forum.eu/wp-content/uploads/2019/04/no-thumbnail.jpg"
     }
-  ]
+]
   
