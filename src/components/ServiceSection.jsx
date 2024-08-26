@@ -15,7 +15,7 @@ const ServiceSection = ({ services }) => {
               <div className="mt-8 lg:mr-12 flex flex-col sm:flex-row lg:flex-col lg:max-w-96 border border-gray-400 rounded-md shadow-md">
                 <img src={post.image} alt="thumbnail" className="h-full w-full sm:h-44 w-44 lg:w-96 lg:h-96 rounded-sm" />
                 <div className="bg-white lg:max-w-96 w-full rounded-md px-2 py-2">
-                  <h5 className="text-lg text-blue-400 hover:underline sm:text-xl">{post.name}</h5>
+                  <h5 className="text-lg text-green-600 hover:underline sm:text-xl">{post.name}</h5>
                   <p className="text-gray-500 tracking-wide">{post.description}</p>
                 </div>
               </div>

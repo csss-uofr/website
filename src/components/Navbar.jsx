@@ -9,7 +9,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="w-full h-20 flex flex-row items-center md:justify-between md:border-none border-gray-300 border-b justify-between px-10">
+      <div className="w-full h-20 flex flex-row items-center md:justify-between lg:border-none border-gray-300 border-b justify-between px-10">
         <div className="w-max flex flex-row items-center">
           <div
             className="text-3xl font-bold tracking-wide flex flex-row items-center hover:cursor-pointer"
@@ -18,39 +18,31 @@ const Navbar = () => {
             <span>
               <img src="https://avatars.githubusercontent.com/u/148284701?s=48&v=4" alt="uofr-csss-logo" className="mr-2 rounded-md h-10 w-10" />
             </span>
-            <h1>UR CSSS</h1>
+            <h1 className="fira italic flex flex-col">CSSS
+              <span className="text-xs text-gray-500">University of Regina</span>
+            </h1>
           </div>
-          <div className="ml-1 text-gray-600 hidden md:flex">
-            <Link className="ml-4" to="/about">
-              About Us
+          <div className="ml-1 text-gray-600 hidden lg:flex fira text-green-600">
+            <Link className="ml-4 hover:bg-green-600 hover:text-white p-2 rounded-md" to="/about">
+               {`<`}About Us{`/>`}
             </Link>
-            <Link className="ml-4" to="/code-of-conduct">
-              Code of Conduct
+            <Link className="ml-4 hover:bg-green-600 hover:text-white p-2 rounded-md" to="/code-of-conduct">
+              {`<`}Code of Conduct{`/>`}
             </Link>
-            <Link className="ml-4" to="/events">
-              Events
+            <Link className="ml-4 hover:bg-green-600 hover:text-white p-2 rounded-md" to="/events">
+              {`<`}Events{`/>`}
             </Link>
-            <Link className="ml-4" to="/contact">
-              Contact
+            <Link className="ml-4 hover:bg-green-600 hover:text-white p-2 rounded-md" to="/contact">
+              {`<`}Contact{`/>`}
             </Link>
-            <Link className="ml-4" to="/elections">
-              Elections
+            <Link className="ml-4 hover:bg-green-600 hover:text-white p-2 rounded-md" to="/elections">
+              {`<`}Elections{`/>`}
             </Link>
           </div>
         </div>
-        <div className="md:hidden flex flex-row items-center">
+        <div className="lg:hidden flex flex-row items-center">
           <button className="px-2 py-1 border bordery-gray-200 rounded-md">
             <IoMenuSharp className="text-2xl" />
-          </button>
-        </div>
-        <div className="w-max-c hidden md:flex">
-          <input
-            type="text"
-            placeholder="Search"
-            className="py-1 px-2 text-sm border-black border-b outline-none"
-          />
-          <button className="ml-2">
-            <IoSearch className="text-lg" />
           </button>
         </div>
       </div>

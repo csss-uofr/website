@@ -51,7 +51,7 @@ const Elections = () => {
 
 
               <div className="py-6 mb-4">
-              <p className="text-center text-blue-500">There are no past elections or Links.</p>
+              <p className="text-center text-green-600">There are no past elections or Links.</p>
               </div>
       </div>
     </div>
