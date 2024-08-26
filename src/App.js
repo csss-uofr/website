@@ -8,6 +8,7 @@ import Elections from './pages/Elections';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Four04 from './pages/Four04';
+import CodeOfConduct from './pages/CodeOfConduct';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/about" element={<About/>} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/elections" element={<Elections/>} />
+          <Route path="/code-of-conduct" element={<CodeOfConduct />} />
           <Route path="*" element={<Four04 />} />
         </Routes>
         <Footer />

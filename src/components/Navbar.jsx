@@ -16,13 +16,16 @@ const Navbar = () => {
             onClick={() => navigate("/")}
           >
             <span>
-              <DiCodepen className="text-5xl" />
+              <img src="https://avatars.githubusercontent.com/u/148284701?s=48&v=4" alt="uofr-csss-logo" className="mr-2 rounded-md h-10 w-10" />
             </span>
             <h1>UR CSSS</h1>
           </div>
           <div className="ml-1 text-gray-600 hidden md:flex">
             <Link className="ml-4" to="/about">
               About Us
+            </Link>
+            <Link className="ml-4" to="/code-of-conduct">
+              Code of Conduct
             </Link>
             <Link className="ml-4" to="/events">
               Events
