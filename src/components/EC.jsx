@@ -12,7 +12,7 @@ const EventCard = ({ data }) => {
           {data.map((post) => (
             <div className="mt-8 lg:ml-10 lg:mx-0 mx-6 flex flex-col sm:flex-row lg:flex-col lg:max-w-80 border border-gray-400 rounded-md shadow-md">
               <img src={post.thumbnailUrl} alt="thumbnail" className="h-full w-full sm:h-44 w-44 lg:w-80 lg:h-80 rounded-sm" />
-              <div className="bg-white lg:max-w-96 w-full lg:h-32 h-20 rounded-md px-2 py-2">
+              <div className="bg-white lg:max-w-96 w-full lg:h-32 h-30 rounded-md px-2 py-2">
                 <h5 className="text-lg text-green-600 hover:underline sm:text-xl">{post.title}</h5>
                 <div className="flex flex-row items-center text-gray-600">
                   <span className="text-md"><IoLocationOutline /></span>
