@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { IoLocationOutline, IoTimeOutline, IoCalendarOutline } from "react-icons/io5";
 
 
 const EventCard = ({ data }) => {
@@ -13,8 +14,21 @@ const EventCard = ({ data }) => {
               <img src={post.thumbnailUrl} alt="thumbnail" className="h-full w-full sm:h-44 w-44 lg:w-80 lg:h-80 rounded-sm" />
               <div className="bg-white lg:max-w-96 w-full lg:h-32 h-20 rounded-md px-2 py-2">
                 <h5 className="text-lg text-green-600 hover:underline sm:text-xl">{post.title}</h5>
-                <p className="text-gray-500 tracking-wide hidden text-xs sm:block sm:mt-1">{post.description}</p>
-                <p className="mt-1 sm:mt-2 text-gray-600">{post.date}</p>
+                <div className="flex flex-row items-center text-gray-600">
+                  <span className="text-md"><IoLocationOutline /></span>
+                  <p className="ml-px font-semibold">
+                    {post.location}</p>
+                </div>
+                <div className="flex flex-row items-center text-gray-600">
+                  <span className="text-md"><IoTimeOutline /></span>
+                  <p className="ml-px font-semibold">{post.time}</p>
+                </div>
+                <div className="flex flex-row items-center text-gray-600">
+                  <span className="text-md"><IoCalendarOutline /></span>
+                  <p className="ml-px font-semibold">{post.date}</p>
+                </div>
+                {/* <p className="text-gray-500 tracking-wide hidden text-xs sm:block sm:mt-1">{post.description}</p>
+                <p className="mt-1 sm:mt-2 text-gray-600">{post.date}</p> */}
               </div>
             </div>
           ))}

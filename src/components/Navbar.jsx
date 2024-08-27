@@ -4,6 +4,8 @@ import { DiCodepen } from "react-icons/di";
 import { IoSearch } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import { IoMenuSharp } from "react-icons/io5";
+import Logo from "../CSSS Logo.png";
+
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -15,10 +17,10 @@ const Navbar = () => {
             className="text-3xl font-bold tracking-wide flex flex-row items-center hover:cursor-pointer"
             onClick={() => navigate("/")}
           >
-            <span>
-              <img src="https://avatars.githubusercontent.com/u/148284701?s=48&v=4" alt="uofr-csss-logo" className="mr-2 rounded-md h-10 w-10" />
+            <span className="bg-black p-1 rounded-md">
+              <img src={Logo} alt="uofr-csss-logo" className="rounded-md h-10 w-10" />
             </span>
-            <h1 className="fira italic flex flex-col">CSSS
+            <h1 className="fira italic flex flex-col ml-2">CSSS
               <span className="text-xs text-gray-500">University of Regina</span>
             </h1>
           </div>

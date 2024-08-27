@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const CodeOfConduct = () => {
   return (
@@ -17,22 +18,45 @@ const CodeOfConduct = () => {
       <div>
         <h1 className="text-2xl font-bold mt-4 mb-2">Our Standards
         </h1>
-        <p className="mb-4">
+        <p className="mt-4 mb-2">
           Examples of behavior that contributes to a positive environment for our community include:
-
-          Demonstrating empathy and kindness toward other people
-          Being respectful of differing opinions, viewpoints, and experiences
-          Giving and gracefully accepting constructive feedback
-          Accepting responsibility and apologizing to those affected by our mistakes, and learning from the experience
-          Focusing on what is best not just for us as individuals, but for the overall community
-          Examples of unacceptable behavior include:
-
-          The use of sexualized language or imagery, and sexual attention or advances of any kind
-          Trolling, insulting or derogatory comments, and personal or political attacks
-          Public or private harassment
-          Publishing others' private information, such as a physical or email address, without their explicit permission
-          Other conduct which could reasonably be considered inappropriate in a professional setting
         </p>
+        <div>
+
+          <li>Demonstrating empathy and kindness toward other people</li>
+          <li>
+            Being respectful of differing opinions, viewpoints, and experiences
+          </li>
+          <li>
+            Giving and gracefully accepting constructive feedback
+          </li>
+          <li>
+            Accepting responsibility and apologizing to those affected by our mistakes, and learning from the experience
+          </li>
+          <li>
+            Focusing on what is best not just for us as individuals, but for the overall community
+          </li>
+        </div>
+        <p className="mt-4 mb-2">
+          Examples of unacceptable behavior include:
+        </p>
+        <div>
+          <li>
+            The use of sexualized language or imagery, and sexual attention or advances of any kind
+          </li>
+          <li>
+            Trolling, insulting or derogatory comments, and personal or political attacks
+          </li>
+          <li>
+            Public or private harassment
+          </li>
+          <li>
+            Publishing others' private information, such as a physical or email address, without their explicit permission
+          </li>
+          <li>
+            Other conduct which could reasonably be considered inappropriate in a professional setting
+          </li>
+        </div>
       </div>
       <div>
         <h1 className="text-2xl font-bold mt-4 mb-2">
@@ -43,7 +67,7 @@ const CodeOfConduct = () => {
 
           Community leaders have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate.
 
-          Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at csss.uofr@gmail.com. All complaints will be reviewed and investigated promptly and fairly.
+          Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at <Link to="mailto:csss.uofr@gmail.com" className='text-green-600 hover:underline'>csss.uofr@gmail.com</Link>. All complaints will be reviewed and investigated promptly and fairly.
 
           All community leaders are obligated to respect the privacy and security of the reporter of any incident.
         </p>
@@ -61,11 +85,13 @@ const CodeOfConduct = () => {
           Attribution
         </h1>
         <p className="mb-4">
-          This Code of Conduct is adapted from the Contributor Covenant, version 2.0, available at https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
-
-          Community Impact Guidelines were inspired by Mozilla's code of conduct enforcement ladder.
-
-          For answers to common questions about this code of conduct, see the FAQ at https://www.contributor-covenant.org/faq. Translations are available at https://www.contributor-covenant.org/translations.
+          This Code of Conduct is adapted from the <Link to="https://www.contributor-covenant.org/" className='text-green-600 hover:underline'>Contributor Covenant</Link>, version 2.0, available at <Link to="https://www.contributor-covenant.org/version/2/0/code_of_conduct.html" className='text-green-600 hover:underline'>https://www.contributor-covenant.org/version/2/0/code_of_conduct.html </Link>.
+        </p>
+        <p className="mb-4">
+          Community Impact Guidelines were inspired by <Link to="https://github.com/mozilla/diversity" className='text-green-600 hover:underline'>Mozilla's code of conduct enforcement ladder</Link>.
+        </p>
+        <p className="mb-4">
+          For answers to common questions about this code of conduct, see the FAQ at <Link to="https://www.contributor-covenant.org/faq" className='text-green-600 hover:underline'>https://www.contributor-covenant.org/faq</Link>. Translations are available at <Link to="https://www.contributor-covenant.org/translations" className='text-green-600 hover:underline'>https://www.contributor-covenant.org/translations</Link>.
         </p>
       </div>
     </div>

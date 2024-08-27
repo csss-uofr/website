@@ -46,14 +46,6 @@ const Elections = () => {
         <h1 className="text-3xl font-bold mb-4 pb-4 border-b border-gray-200">Elections {data.year}</h1>
                 <ElectionCard candidatesData={candidatesData} />
       </div>
-      <div>
-        <h1 className="text-3xl font-bold mb-4 pb-4 border-b border-gray-200">Past Elections</h1>
-
-
-              <div className="py-6 mb-4">
-              <p className="text-center text-green-600">There are no past elections or Links.</p>
-              </div>
-      </div>
     </div>
   );
 };
