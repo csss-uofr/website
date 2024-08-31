@@ -1,4 +1,5 @@
 import React from 'react';
+import LoadingScreen from '../components/LoadingScreen';
 
 const Contact = () => {
     return (
@@ -10,7 +11,7 @@ const Contact = () => {
             <div>
                 <div className='py-14'>
             <h1 className="text-3xl font-bold mb-4">Suggestion Box</h1>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdqQxENadQxbt6WKe6JhPgOp58ykqTf2LdWYc4FYQ9w9uDH-Q/viewform?embedded=true" width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdqQxENadQxbt6WKe6JhPgOp58ykqTf2LdWYc4FYQ9w9uDH-Q/viewform?embedded=true" width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0"><LoadingScreen /></iframe>
                 </div>
             </div>
         </div>

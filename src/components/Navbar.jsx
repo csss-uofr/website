@@ -18,7 +18,7 @@ const Navbar = () => {
             onClick={() => navigate("/")}
           >
             <span className="bg-black p-1 rounded-md">
-              <img src={Logo} alt="uofr-csss-logo" className="rounded-md h-10 w-10" />
+              <img src={Logo} alt="uofr-csss-logo" className="h-10 w-10" />
             </span>
             <h1 className="fira italic flex flex-col ml-2">CSSS
               <span className="text-xs text-gray-500">University of Regina</span>

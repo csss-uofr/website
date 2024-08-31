@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import HeroSection from "../components/HeroSection";
 import EventCard from "../components/EC";
 import ServiceSection from "../components/ServiceSection";
+import LoadingScreen from "../components/LoadingScreen";
 
 const Home = () => {
   const [data, setData] = useState([]);
@@ -51,7 +52,7 @@ const Home = () => {
   }
 
   if (loading) {
-    return <div>Loading...</div>; // Display loading message
+    return <div><LoadingScreen /></div>; // Display loading message
   }
 
   if (error) {

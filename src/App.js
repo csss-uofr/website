@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Four04 from './pages/Four04';
 import CodeOfConduct from './pages/CodeOfConduct';
+import LoadingScreen from './components/LoadingScreen';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/events" element={<Events/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/contact" element={<Contact/>} />
+          <Route path="/beta" element={<LoadingScreen/>} />
           <Route path="/elections" element={<Elections/>} />
           <Route path="/code-of-conduct" element={<CodeOfConduct />} />
           <Route path="*" element={<Four04 />} />

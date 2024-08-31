@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import EventCard from '../components/EC';
+import LoadingScreen from '../components/LoadingScreen';
 // import eventsData from '../data/events';
 // import EventCard from '../components/EventCard'; 
 
@@ -35,7 +36,7 @@ const Events = () => {
   
 
   if (loading) {
-    return <div>Loading...</div>; // Display loading message
+    return <div><LoadingScreen/></div>; // Display loading message
   }
 
   if (error) {

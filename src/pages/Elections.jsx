@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import ElectionCard from "../components/ElectionCard";
+import LoadingScreen from "../components/LoadingScreen";
 
 // TODO:
 // - add previous elections results in election-results.md
@@ -34,7 +35,7 @@ const Elections = () => {
   
 
   if (loading) {
-    return <div>Loading...</div>; // Display loading message
+    return <div><LoadingScreen/></div>; // Display loading message
   }
 
   if (error) {
