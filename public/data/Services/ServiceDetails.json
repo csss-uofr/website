@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Service One",
+        "description": "Description for Service One.",
+        "image": "https://www.eric-forum.eu/wp-content/uploads/2019/04/no-thumbnail.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Service Two",
+        "description": "Description for Service Two.",
+        "image": "https://www.eric-forum.eu/wp-content/uploads/2019/04/no-thumbnail.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Service Three",
+        "description": "Description for Service Three.",
+        "image": "https://www.eric-forum.eu/wp-content/uploads/2019/04/no-thumbnail.jpg"
+    }
+]

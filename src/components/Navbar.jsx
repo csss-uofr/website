@@ -1,27 +1,55 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
+import { DiCodepen } from "react-icons/di";
+import { IoSearch } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
+import { IoMenuSharp } from "react-icons/io5";
+import Logo from "../CSSS Logo.png";
+
 
 const Navbar = () => {
-    return (
-        <nav className="bg-gray-800 p-4">
-            <div className="max-w-7xl mx-auto px-4">
-                <div className="flex justify-between items-center">
-                    <div className="flex-shrink-0">
-                        <Link to="/" className="text-white font-bold text-xl">Computer Science Students Society</Link>
-                    </div>
-                    <div className="hidden md:block">
-                        <ul className="flex space-x-4">
-                            <li><Link to="/events" className="text-white hover:text-gray-300">Events</Link></li>
-                            <li><Link to="/about" className="text-white hover:text-gray-300">About</Link></li>
-                            <li><Link to="/contact" className="text-white hover:text-gray-300">Contact</Link></li>
-                            <li><Link to="/elections" className="text-white hover:text-gray-300">Elections</Link></li>
-                            
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    );
+  const navigate = useNavigate();
+  return (
+    <>
+      <div className="w-full h-20 flex flex-row items-center md:justify-between lg:border-none border-gray-300 border-b justify-between px-10">
+        <div className="w-max flex flex-row items-center">
+          <div
+            className="text-3xl font-bold tracking-wide flex flex-row items-center hover:cursor-pointer"
+            onClick={() => navigate("/")}
+          >
+            <span className="bg-black p-1 rounded-md">
+              <img src={Logo} alt="uofr-csss-logo" className="h-10 w-10" />
+            </span>
+            <h1 className="fira italic flex flex-col ml-2">CSSS
+              <span className="text-xs text-gray-500">University of Regina</span>
+            </h1>
+          </div>
+          <div className="ml-1 text-gray-600 hidden lg:flex fira text-green-600">
+            <Link className="ml-4 hover:bg-green-600 hover:text-white p-2 rounded-md" to="/about">
+               {`<`}About Us{`/>`}
+            </Link>
+            <Link className="ml-4 hover:bg-green-600 hover:text-white p-2 rounded-md" to="/code-of-conduct">
+              {`<`}Code of Conduct{`/>`}
+            </Link>
+            <Link className="ml-4 hover:bg-green-600 hover:text-white p-2 rounded-md" to="/events">
+              {`<`}Events{`/>`}
+            </Link>
+            <Link className="ml-4 hover:bg-green-600 hover:text-white p-2 rounded-md" to="/contact">
+              {`<`}Contact{`/>`}
+            </Link>
+            <Link className="ml-4 hover:bg-green-600 hover:text-white p-2 rounded-md" to="/elections">
+              {`<`}Elections{`/>`}
+            </Link>
+          </div>
+        </div>
+        <div className="lg:hidden flex flex-row items-center">
+          <button className="px-2 py-1 border bordery-gray-200 rounded-md">
+            <IoMenuSharp className="text-2xl" />
+          </button>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default Navbar;

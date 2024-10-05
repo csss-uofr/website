@@ -1,0 +1,53 @@
+{
+    "year": 2024,
+    "election_type": "Presidential",
+    "candidates": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "party": "Democratic Party",
+        "votes": 65234567,
+        "percentage": 48.5,
+        "profile_photo": "https://www.eric-forum.eu/wp-content/uploads/2019/04/no-thumbnail.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "party": "Republican Party",
+        "votes": 61478901,
+        "percentage": 45.7,
+        "profile_photo": "https://www.eric-forum.eu/wp-content/uploads/2019/04/no-thumbnail.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Alex Johnson",
+        "party": "Independent",
+        "votes": 5401234,
+        "percentage": 4.0,
+        "profile_photo": "https://www.eric-forum.eu/wp-content/uploads/2019/04/no-thumbnail.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Morgan Lee",
+        "party": "Green Party",
+        "votes": 2145678,
+        "percentage": 1.6,
+        "profile_photo": "https://www.eric-forum.eu/wp-content/uploads/2019/04/no-thumbnail.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Chris Kim",
+        "party": "Libertarian Party",
+        "votes": 1034567,
+        "percentage": 0.8,
+        "profile_photo": "https://www.eric-forum.eu/wp-content/uploads/2019/04/no-thumbnail.jpg"
+      }
+    ],
+    "total_votes": 134567347,
+    "winner": {
+      "id": 1,
+      "name": "John Doe",
+      "party": "Democratic Party"
+    }
+  }
+  

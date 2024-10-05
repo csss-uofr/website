@@ -5,23 +5,29 @@ import Events from './pages/Events';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Elections from './pages/Elections';
-import Layout from './components/Layout';
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Four04 from './pages/Four04';
+import CodeOfConduct from './pages/CodeOfConduct';
+import LoadingScreen from './components/LoadingScreen';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Layout >
+        <Navbar />
         <Routes>
-          <Route path="/" exact component={Home} />
-          <Route path="/events" component={Events} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/elections" component={Elections} />
-          <Route path="*" element={<h1>Not Found</h1>} />
+          <Route path="/" element={<Home/>} />
+          <Route path="/home" element={<Home/>} />
+          <Route path="/events" element={<Events/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/contact" element={<Contact/>} />
+          <Route path="/beta" element={<LoadingScreen/>} />
+          <Route path="/elections" element={<Elections/>} />
+          <Route path="/code-of-conduct" element={<CodeOfConduct />} />
+          <Route path="*" element={<Four04 />} />
         </Routes>
-
-        </Layout>
+        <Footer />
       </div>
     </Router>
   );
